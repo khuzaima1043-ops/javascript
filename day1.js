@@ -1,1 +1,1 @@
-console.log("khuziama khan")
+console.log("khuziama khan bamozaii ")
