@@ -4,7 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <script>
+        let a = prompt("Hey whats your age")
+        a=Number.parseInt(a)    // converting a string into a number 
+         console.log(typeof a);
+
+         if (a<0){
+               alert("this age is invalid")
+         }
+
+         else if (a<18){
+             alert("your age must be greater than 18 and less than 50. if your age is under 18 or 50 then it will be considered . and if your age are above from 50 it is not considered")
+         }
+            
+        else if (a>=18 && a<=50){
+              alert("now you are ready to drive this car. Thankyou")
+          }
+
+          else if (a>50){
+             alert("your age is above from fifty . so it is not considered. ")
+          }
+          console.log("Done");
+          
+
+                        // TURNARY OPERATOR
+
+        console.log("you can" , a<18 || a>50? "not drive" : "drive");
+        
     
+
+         
+
+    </script>
 </head>
 <body>
     
