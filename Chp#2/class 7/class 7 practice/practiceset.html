@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+    // Problem # 1
+
+ let a = prompt("hey whats your age")
+     a= Number.parseInt(a)
+     if (a<0) {
+            alert("this is an invalid age")
+     }
+         else if(a<10 || a>20) {
+            alert("person age mus be under 10 20");
+     }
+         else if(a>=10 && a<=20) {
+             alert("person age is correct . Verification Done");
+                        
+         }
+
+    //  Problem # 2
+
+     let b = prompt("hey whats your age")
+         b= Number.parseInt(b)
+         
+        switch (b) {
+            case 12:
+                console.log("your age is 12");
+                break;
+            case 13:
+                console.log("your age is 13");
+                break;
+            case 14:
+                console.log("your age is 14");
+                break;
+            default:
+                console.log("your age is not special");
+        }
+
+//    Problem # 3
+
+let Num = prompt ("write any number")
+       Num= Number.parseInt(Num)
+        if (Num %  2 == 0 && Num % 3 == 0) {
+            console.log("number has been divisible by 2 and 3");
+        } 
+
+        else{
+            console.log("number has not  been divisible by 2 and 3");
+        }       
+        
+
+//   Problem # 4
+        
+let num = prompt ("whats your age")
+       num= Number.parseInt(num)
+        if (num %  2 == 0 || num % 3 == 0) {
+            console.log("number has been divisible by 2 or 3");
+        } 
+
+        else{
+            console.log("number has not  been divisible by 2 or 3");
+        }       
+
+//   Problem # 5
+
+
+        let k= prompt("what is your age?   NOTE: Your age must be greate than 18 to drive a car.")
+         k= Number.parseInt(k)
+
+         console.log("you can " , k<18?  "cannot drive a car beacause your age is lesss than 18" : "drive a car"    );
+         
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
