@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chp 1,2 and 3 practice set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 60px;
+            width: 100%;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            line-height: 2;
+        }
+
+        header nav li {
+            list-style: none;
+            display: inline-flex;
+            font-size: 29px;
+            font-family: coolvetica, sans-serif;
+            margin-right: 20px;
+        }
+
+        header nav li:hover {
+            color: darkgray;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        main {
+            height: 83vh;
+            background-color: beige;
+        }
+
+        main .h1 {
+            display: flex;
+            justify-content: center;
+            padding-top: 56px;
+            font-size: 22px;
+            text-shadow: 2px 2px 4px gray;
+        }
+
+        main .paragraph {
+            display: flex;
+            justify-content: center;
+            font-size: 21px;
+            margin: 38px 30px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+
+        main .students-container {
+            display: flex;
+            justify-content: center;
+            gap: 33px;
+        }
+
+        main .student-card {
+        background-color: #6c3d00;
+            padding: 18px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        main .student-card h2 {
+            font-size: 23px;
+            padding-bottom: 7px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+            color: white;
+            text-decoration: underline;
+        }
+
+        main .student-card p {
+            font-size: 19px;
+            color: #fff;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+        footer{   
+            background-color: black;
+            color: white;
+            height: 60px;
+            width: 100%;
+            font-size: 29px;
+           font-family: coolvetica, sans-serif;
+            text-align: center;
+        }
+        footer:hover {
+            color: darkgray;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="h1">
+                <h1>Student Performance Manager</h1>
+            </div>
+        </section>
+        <section>
+            <div class="paragraph">
+                <p>
+                    Student Performance Manager ek aisa system hai jo students ke marks ko manage aur analyze karne ke
+                    liye
+                    banaya gaya hai. Ismein student ke different subjects ke marks ko process karke uska average, grade
+                    aur
+                    pass ya fail status calculate kiya jayega. Is project ka purpose JavaScript ke basic concepts ko ek
+                    practical system mein use karna aur programming logic aur problem-solving skills ko improve karna
+                    hai.
+                </p>
+            </div>
+
+        </section>
+        <section>
+            <div class="students-container">
+
+                <div class="student-card">
+                    <h2>Student 1:</h2>
+                    <p>Math: 85</p>
+                    <p>English: 78</p>
+                    <p>Computer: 92</p>
+                </div>
+
+                <div class="student-card">
+                    <h2>Student 2:</h2>
+                    <p>Math: 72</p>
+                    <p>English: 88</p>
+                    <p>Computer: 80</p>
+                </div>
+
+                <div class="student-card">
+                    <h2>Student 3:</h2>
+                    <p>Math: 95</p>
+                    <p>English: 91</p>
+                    <p>Computer: 89</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <Footer>
+        Copyright @ All Rights Reserved
+    </Footer>
+
+
+
+</body>
+
+</html>
