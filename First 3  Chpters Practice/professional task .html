@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>professional task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background: #222;
+            padding: 15px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+        }
+
+        li {
+            color: white;
+        }
+
+        .h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .paragraph {
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 15px;
+            background: #222;
+            color: white;
+        }
+    </style>
+    <script>
+        const items = {
+        rice : 100 ,
+        sugar : 200,
+        oil  : 400,
+        milk : 230,
+        bread : 80,
+        apple: 150,
+    banana: 120,
+    tomato : 1600,
+    chiken : 600
+        }
+        function getDiscount(totalBill) {
+            if (totalBill >=1000) {
+                return(15)
+            }
+            else if(totalBill >=500){
+                return(10)
+            }
+            else{
+                return (0)
+            }
+        }
+
+        
+        function stockStatus(quantity) {
+            switch (quantity) {
+                case 0:
+                 return("Out of Stock");
+                case 1:
+                    return("Low Stock");
+                case 2:
+                    return("Low Stock");
+                default:
+              return("In Stock");
+                  
+            }      
+        }
+        
+        for (let keys in items){
+            console.log(keys , items[keys]);
+        }
+       let userinput= prompt("Which item you want to buy")
+       let runningTotal = 0 ;
+        while (userinput !== "done") {
+            if (items [userinput] !==undefined) {
+                console.log(items[userinput]);
+                runningTotal += items[userinput]
+            }
+            else{
+                console.log("item not found");
+            }
+              userinput= prompt("Which item you want to buy")
+        }
+       
+         console.log("Total Bill is" , runningTotal);
+         
+        
+         let discount = getDiscount(runningTotal);
+
+        let finalprice= runningTotal - (runningTotal * discount/100);
+        console.log("Final price is " , finalprice);
+        
+
+
+        let discountMessage =runningTotal > 500 ?
+        "You qualified for a discount!" : "Add more items for a discount";
+            console.log(discountMessage);
+           alert(
+    "Total: " + runningTotal +
+    "\nDiscount: " + discount + "%" +
+    "\nFinal Price: " + finalprice +
+    "\n" + discountMessage
+     );
+
+// \n means go to next line 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contacts</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="h1">
+                <h1>Grocery Store Billing System</h1>
+            </div>
+        </section>
+        <section>
+            <div class="paragraph">
+                <p>
+                  Grocery Store Billing System ek simple JavaScript-based system hai jo grocery items ki prices ko manage aur customer ka total bill calculate karne ke liye banaya gaya hai. Is system mein user apni required grocery items select karta hai, unki prices automatically total bill mein add hoti hain, aur total amount ke according discount calculate hota hai. Project mein JavaScript ke objects, functions, conditions, switch-case, loops, operators, ternary operator, prompt aur alert jaise concepts ko practical way mein use kiya gaya hai. Is project ka purpose programming logic aur problem-solving skills ko improve karna hai.
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <Footer>
+        Copyright @ All Rights Reserved
+    </Footer>
+
+</body>
+
+</html>
