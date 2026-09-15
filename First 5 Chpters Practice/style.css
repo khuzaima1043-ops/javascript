@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+ 
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+
+}
+header {
+  height: 57px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 23px;
+  padding: 3px 10px;
+  line-height: 2.5;
+}
+
+header nav ul li:hover {
+  color: yellow;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+h1 {
+    padding-top: 40px;
+    font-size: 36px;
+}
+
+p {
+      padding-top: 10px;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.report {
+    width: 400px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
